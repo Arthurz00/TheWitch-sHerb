@@ -946,7 +946,9 @@ body{
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s alternate linear infinite; /* Apply the animation */
+  /* range 44.6% - 46.4% */
+  animation: moveLeftRight 3s alternate linear infinite; 
+  /* Apply the animation */
 }
 
 @keyframes moveLeftRight {
