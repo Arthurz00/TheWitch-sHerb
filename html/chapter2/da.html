@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Counter</title>
+</head>
+<body>
+
+<!-- Button to navigate to the next page -->
+<a href="/html/chapter2/chapter2-3.html" id="nextLink">
+    <button id="nextButton" class="changing-element btnft bottom-button" style="z-index: 100;">
+        กดหน้าจอเพื่อไปต่อ
+    </button>
+</a>
+
+<script>
+    // Track the number of clicks
+    let clickCount = 0;
+
+    // Get the button element
+    const nextButton = document.getElementById('nextButton');
+    const nextLink = document.getElementById('nextLink');
+
+    // Add click event listener to the button
+    nextButton.addEventListener('click', () => {
+        // Increment the click count
+        clickCount++;
+
+        // Check if the click count has reached 5
+        if (clickCount >= 5) {
+            // Disable the button to prevent further clicks
+            nextButton.disabled = true;
+
+            // Change button text to indicate loading
+            nextButton.textContent = 'Loading...';
+
+            // Navigate to the next page after a short delay (for demonstration)
+            setTimeout(() => {
+                window.location.href = nextLink.href; // Navigate to the next page
+            }, 1000); // Delay of 1 second (1000 milliseconds)
+        }
+    });
+</script>
+
+</body>
+</html>

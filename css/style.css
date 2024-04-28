@@ -1,0 +1,1008 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.almendra-sc-regular {
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .prompt-thin {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .prompt-extralight {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-semibold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .prompt-extrabold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .prompt-thin-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .prompt-extralight-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .prompt-light-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .prompt-regular-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .prompt-medium-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .prompt-semibold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .prompt-bold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .prompt-extrabold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .prompt-black-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+    
+/* //////////////////////////////////////////////////////////////// */
+
+body{
+    font-family: 'Prompt', sans-serif;
+    font-size: 400;
+    overflow: hidden;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.bg {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0 auto; /* Center the section */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrolling */
+    background-image: url(/img/scene1/BG_new.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* .container{
+    width: 100vh;
+    height: 0;
+    padding-top: calc(9/15.3 * 100vw);
+    position: relative;
+    overflow: hidden;
+    background-color: beige;
+} */
+
+.rps{
+    width: 100%;
+    height: auto;
+}
+
+.btnhome{
+    font-family: Prompt;
+    width: 270px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    color: rgb(33, 161, 151);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+    border-radius: 70px;
+}
+
+.changing-element {
+    opacity: 0.25; /* Initial opacity */
+    animation: changeOpacity 3s ease-in-out infinite; /* Animation properties */
+}
+
+ /* Keyframes for the animation */
+@keyframes changeOpacity {
+    0%, 100% { opacity: 1; } /* Start and end with full opacity */
+    40% { opacity: 0.5; } /* Middle with zero opacity */
+}
+
+.moveL {
+    animation: shake 8.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {0% { transform: rotate(1deg); }
+            10% { transform: rotate(0deg); }
+            20% { transform: rotate(-1deg); }
+            30% { transform: rotate(0deg); }
+            40% { transform: rotate(1deg); }
+            50% { transform: rotate(0deg); }
+            60% { transform: rotate(-1deg); }
+            70% { transform: rotate(0deg); }
+            80% { transform: rotate(1deg); }
+            90% { transform: rotate(0deg); }
+            100% { transform: rotate(1deg); }
+}
+
+.moveR {
+    animation: shake-reverse 8.5s; /* Changed animation name */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake-reverse { /* Changed keyframes name */
+    0% { transform: rotate(-1deg); } /* Reversed rotation direction */
+    10% { transform: rotate(0deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(-1deg); }
+    50% { transform: rotate(0deg); }
+    60% { transform: rotate(1deg); }
+    70% { transform: rotate(0deg); }
+    80% { transform: rotate(-1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); } /* Reversed rotation direction */
+}
+
+.moveArm {
+    animation: shake 8.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {0% { transform: rotate(1deg); }
+            10% { transform: rotate(0deg); }
+            20% { transform: rotate(1deg); }
+            30% { transform: rotate(0deg); }
+            40% { transform: rotate(1deg); }
+            50% { transform: rotate(0deg); }
+            60% { transform: rotate(1deg); }
+            70% { transform: rotate(0deg); }
+            80% { transform: rotate(1deg); }
+            90% { transform: rotate(0deg); }
+            100% { transform: rotate(1deg); }
+}
+
+.moveM {
+  animation: rotateBody 5s ease-in-out infinite alternate;
+}
+
+/* Define the keyframes for the rotation animation */
+@keyframes rotateBody {
+    0% {
+        transform: rotate(-5deg); /* Rotate the body to the left */
+    }
+    100% {
+        transform: rotate(3deg); /* Rotate the body to the right */
+    }
+}
+
+.moveMA {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {0% { transform: rotate(0deg); }
+            10% { transform: rotate(0.8deg); }
+            20% { transform: rotate(1deg); }
+            30% { transform: rotate(1.3deg); }
+            40% { transform: rotate(1deg); }
+            50% { transform: rotate(0.5deg); }
+            60% { transform: rotate(0.3deg); }
+            70% { transform: rotate(0deg); }
+            80% { transform: rotate(0.8deg); }
+            90% { transform: rotate(0.2deg); }
+            100% { transform: rotate(0deg); }
+}
+
+.moveWm {
+    animation: shake 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {0% { transform: rotate(0.2deg); }
+            10% { transform: rotate(0deg); }
+            20% { transform: rotate(0.5deg); }
+            30% { transform: rotate(0deg); }
+            40% { transform: rotate(0.7deg); }
+            50% { transform: rotate(0.3deg); }
+            60% { transform: rotate(0deg); }
+            70% { transform: rotate(0.5deg); }
+            80% { transform: rotate(0.6deg); }
+            90% { transform: rotate(0.4deg); }
+            100% { transform: rotate(0.2deg); }
+}
+
+.moveHead {
+  animation: shake 11s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {0% { transform: rotate(3deg); }
+          10% { transform: rotate(0deg); }
+          20% { transform: rotate(-1deg); }
+          30% { transform: rotate(0deg); }
+          40% { transform: rotate(3deg); }
+          50% { transform: rotate(0deg); }
+          60% { transform: rotate(-1deg); }
+          70% { transform: rotate(0deg); }
+          80% { transform: rotate(3deg); }
+          90% { transform: rotate(0deg); }
+          100% { transform: rotate(3deg); }
+}
+
+
+.thewitch{
+    font-size: 78px;
+    text-shadow: 1px 2.5px #00000081;
+    font-family: Almendra SC;
+    letter-spacing: 4px;
+    font-weight: 400;
+    
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'prompt';
+
+}
+
+.hero-text-middle {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'prompt';
+
+}
+
+.hero-text1-1 {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.centerpg_home{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btnft{
+    font-family: Prompt;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Inherit text color */
+    
+}
+.btnft :hover {
+    color: rgba(255, 255, 255, 0.154);
+}
+
+.btn_about{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-align: start;
+    font-family: Prompt;
+    font-size: 200;
+    font-style: normal;
+}
+
+.btn_credit{
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    text-align: end;
+}
+
+.centerpg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centerpg_top{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centerpg_top2{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centerpg_bt{
+    top: 100%;
+    left: 50%;
+    text-align: center;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    /* width: 100%; */
+    z-index: -1; /* Ensure the image stays behind other content */
+  }
+
+  .bottom-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    z-index: 2;
+    font-size: 16pt;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .glowing {
+    animation: glow 3s infinite alternate;
+  }
+
+  /* Keyframes for the glow animation */
+  @keyframes glow {
+    from { opacity: 0.2; }
+    to { opacity: 0.5; }
+  }
+
+.glowwhite {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 10px 0 white;
+  }
+  50% {
+      box-shadow: 0 0 20px 5px white;
+  }
+  100% {
+      box-shadow: 0 0 10px 0 white;
+  }
+}
+
+.bouncing {  
+  animation: bouncingBallAnimation 2.5s;  
+  animation-direction: alternate;  
+  animation-iteration-count: infinite;  
+}  
+
+/* we will make diagonal bounce to the ball */  
+@keyframes bouncingBallAnimation {  
+  from {  
+      transform: translate3d(0, 0, 0);  
+  }  
+  to {  
+      transform: translate3d(0px, 60px, 0);  
+  }  
+} 
+
+.bouncing-knife {  
+  animation: bouncingBallAnimation 1s;  
+  animation-direction: alternate;  
+  animation-iteration-count: infinite;  
+}  
+
+/* we will make diagonal bounce to the ball */  
+@keyframes bouncingBallAnimation {  
+  from {  
+      transform: translate3d(0, 0, 0);  
+  }  
+  to {  
+      transform: translate3d(0px, 40px, 0);  
+  }  
+} 
+
+.bouncing-fire {  
+  animation: bouncingBallAnimation 2s;  
+  animation-direction: alternate;   
+  animation-iteration-count: infinite;  
+}  
+
+/* we will make diagonal bounce to the ball */  
+@keyframes bouncingBallAnimation {  
+  from {  
+      transform: translate3d(0, 0, 0);  
+  }  
+  to {  
+      transform: translate3d(0px, 50px, 0);  
+  }  
+}
+
+.bouncing-weapon {  
+  animation: bouncingBallAnimation 1.8s;  
+  animation-direction: alternate;   
+  animation-iteration-count: infinite;  
+}  
+
+/* we will make diagonal bounce to the ball */  
+@keyframes bouncingBallAnimation {  
+  from {  
+      transform: translate3d(0, 0, 0);  
+  }  
+  to {  
+      transform: translate3d(0px, 60px, 0);  
+  }  
+}
+
+.bouncing-arm {  
+  animation: bouncingBallAnimation 2.2s;  
+  animation-direction: alternate;   
+  animation-iteration-count: infinite;  
+}  
+
+/* we will make diagonal bounce to the ball */  
+@keyframes bouncingBallAnimation {  
+  from {  
+      transform: translate3d(0, 0, 0);  
+  }  
+  to {  
+      transform: translate3d(0px, 45px, 0);  
+  }  
+}
+
+.sizing {
+  animation: sizeAnimation 1s ease-in-out forwards; /* Apply the size animation */
+}
+
+@keyframes sizeAnimation {
+  0% {
+    transform: scale(0); /* Start size: 0% */
+  }
+  100% {
+    transform: scale(1); /* End size: 100% */
+  }
+}
+
+.opacity {
+  animation: opacityAnimation 3s ease-in-out forwards; /* Apply the opacity animation */
+}
+
+@keyframes opacityAnimation {
+  0% {
+      opacity: 0; /* Start opacity: 0% */
+  }
+  100% {
+      opacity: 1; /* End opacity: 100% */
+  }
+}
+
+.tran-x {
+  animation: translateXLoop 15s linear infinite; /* Apply the translation animation */
+}
+
+@keyframes translateXLoop {
+  0% {
+      transform: translateX(0); /* Start at initial position */
+  }
+  100% {
+      transform: translateX(-200vw); /* Translate to the right edge of the viewport */
+  }
+}
+
+.movehand {
+  position: relative;
+  animation: moveHand 2s ease infinite alternate; /* Adjust animation duration and timing function */
+}
+
+@keyframes moveHand {
+    0% {
+        transform: translateX(0);
+
+    }
+    100% {
+        transform: translateX(100px); /* Adjust the distance as needed */
+
+    }
+}
+
+.rectangle-L {
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  height: 480px;
+  width: 400px;
+  border-radius: 35px;
+  background-color: #2d5c64;
+  z-index: 2;
+}
+
+.rectangle-Lin {
+  position: fixed;
+  top: 42%;
+  left: 21.5%;
+  height: 270px;
+  width: 340px;
+  border-radius: 35px;
+  background-color: #7ab6b7;
+  z-index: 3;
+
+}
+
+.rectangle-Lin-x {
+  position: fixed;
+  top: 42%;
+  left: 21.75%;
+  height: 270px;
+  width: 335px;
+  border-radius: 35px;
+  background-color: #7ab6b7;
+  z-index: 3;
+
+}
+
+.rectangle-R {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  height: 480px;
+  width: 660px;
+  border-radius: 35px;
+  background-color: #2d5c64;
+  z-index: 2;
+}
+
+.rectangle-Rin {
+  position: fixed;
+  top: 28%;
+  right: 11.75%;
+  height: 425px;
+  width: 590px;
+  border-radius: 35px;
+  background-color: #7ab6b7;
+  z-index: 3;
+}
+
+.rectangle-cut {
+  position: absolute;
+  top: 45%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+  height: 605px;
+  width: 1100px;
+  border-radius: 35px;
+  background-color: #162023;
+  z-index: 3;
+}
+
+.rectangle-honey-L {
+  position: absolute;
+  top: 45%; /* Center vertically */
+  left: 30%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+  height: 600px;
+  width: 500px;
+  border-radius: 35px;
+  background-color: #9dc2c2;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Define the transition */
+    }
+
+.rectangle-honey-L:hover {
+        transform: scale(1.1); /* Scale the box on hover */
+        background-color: white; /* Change background color on hover */
+        cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.rectangle-honey-L:hover {
+  background-color: #ffffff; /* Change background color on hover */
+  transform: scale(1.1); /* Scale up the element by 10% on hover */
+}
+
+.rectangle-honey-R {
+  position: absolute;
+  top: 45%; /* Center vertically */
+  right: 4%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+  height: 600px;
+  width: 500px;
+  border-radius: 35px;
+  background-color: #9dc2c2;
+  z-index: 3;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  background-color: #305658;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden; /* Use 'hidden' instead of 'scroll' for circular shape */
+
+  /* Transition effect for opacity change */
+  transition: opacity 0.3s ease;
+}
+
+.circle:hover {
+  opacity: 0.7; /* Reduce opacity to 70% when hovered */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+.center-bottom-element {
+  position: absolute; /* Position the element absolutely */
+  bottom: 4%; /* Align the element to the bottom */
+  left: 50%; /* Center the element horizontally */
+  transform: translateX(-50%); /* Adjust for center alignment */
+  padding: 10px;
+}
+
+.centercenter {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-knife{
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(13vw);
+  }
+}
+
+.element-to-animate {
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  opacity: 0;
+  animation: fadeAnimation 1.5s ease-in-out;
+}
+
+.fade-in{
+  opacity: -0.5; /* Initially hidden */
+  animation: fadeIn 4s ease-in forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start with opacity 0 (hidden) */
+  }
+  100% {
+      opacity: 1; /* End with opacity 1 (fully visible) */
+  }
+}
+
+.push-in {
+  position: absolute;
+  top: 50%;
+  right: -200px; /* Start off the screen */
+  animation: pushIn 1s forwards; /* Apply the animation */
+}
+
+@keyframes pushIn {
+  0% {
+      transform: translateX(0); /* Start from current position */
+  }
+  100% {
+      transform: translateX(-200px); /* Move left by 200px */
+  }
+}
+
+.game-bar {
+  width: 800px;
+  height: 50px;
+  background-color: #2d5c64;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 120px; /* Adjust this value to control the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  z-index: 1;
+}
+
+.game-bar-middle {
+  width: 70px;
+  height: 50px;
+  background-color: #7ab6b7;
+  position: fixed;
+  bottom: 120px; /* Adjust this value to control the distance from the bottom */
+  left: 44%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  z-index: 2;
+}
+
+.game-bar-low {
+  width: 280px;
+  height: 50px;
+  background-color: #95d7d8;
+  border-radius: 30px 0px 0px 30px;
+  position: fixed;
+  bottom: 120px; /* Adjust this value to control the distance from the bottom */
+  left: 35%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  z-index: 3;
+}
+
+
+.lowfire{
+  position: absolute; /* Use 'fixed' for positioning relative to the viewport */
+  bottom: 9%; /* Position the bottom edge at the bottom of the viewport */
+  left: 24%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 16pt;
+  color: grey
+}
+
+.highfire{
+  position: absolute; /* Use 'fixed' for positioning relative to the viewport */
+  bottom: 9%; /* Position the bottom edge at the bottom of the viewport */
+  right: 22%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 16pt;
+  color: grey;
+}
+
+.fireboil{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 50px;
+  z-index: 5;
+}
+
+.moving-fireboil {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
+}
+
+@keyframes moveLeftRight {
+  0% {
+      left: 1; /* Start position: left edge of the container */
+  }
+  50% {
+      left: 30%/* Middle position: right edge of the container minus element width */
+  }
+  100% {
+      left: 1 ; /* End position: back to the left edge of the container */
+  }
+}
+
+.center-container {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CSS */
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}

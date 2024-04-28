@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Witch's Herb</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font.css">
+
+</head>
+
+<style> 
+    body {
+        font-family: 'Prompt', sans-serif;
+        font-size: 400;
+        max-width: 1920px;
+        max-height: 1024px;
+        background-image: url(/img/scene1/BG_new.PNG);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    
+</style>
+
+<body>
+    <audio id="bgSound" autoplay loop>
+        <source src="/soundbg.mp3" type="audio/mpeg">
+    </audio>
+
+    <div>
+        <img src="/img/scene1/smoke.png" width="70%" style="position: fixed; top: 0; left: 0; opacity: 10%; margin-left: 13%; margin-top: -6%; z-index: 100;" class="changing-element">
+        <img src="/img/scene1/L-H.png" width="100%" style="margin-top: -2%;" class="moveL">
+        <img src="/img/scene1/R-H.png" width="100%" style="margin-top: -66%; z-index: 30;" class="moveR" >
+    </div>
+
+    <div class="container">
+    <div class="hero-text" style="z-index: 110;">
+        <h1 class="thewitch">The Witch's Herb</h1> 
+        <p>เมื่อหมู่บ้านที่คุณอยู่ได้เกิดโรคระบาดครั้งใหญ่ขึ้น <br>
+            ความน่ากลัวของโรคร้านทำให้เกิดข้อสงสัยว่าทำไมถึงเกิดเหตุกรณ์เช่นนี้ <br>
+            ผู้คนเริ่มหันมาชี้นิ้วใส่กันเอง และเชื่อว่าเป็นผลมาจากคำสาปของ "แม่มด" <br>
+            เพื่อแสดงความบริสุทธิ์ คุณจึงต้องหาทาทางพิสูจน์ตัวตนของคุณ <br>
+            ทุกการตัดสินใจจะส่งผลต่อความอยู่รอด
+        </p>         
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="centerpg_home">
+        <a class="next" href="/html/chapter1.html">
+            <button class="btnhome" type="button">
+                เข้าสู่เนื้อหา
+            </button>
+        </a>
+    </div><br>
+
+    <div class="btn_about">
+        <button class="btnft" style="font-weight: 200;">เกี่ยวกับ</button>
+    </div>
+
+    <div class="btn_credit">
+        <button class="btnft" style="font-weight: 200;">เครดิต</button>
+    </div>
+    </div>
+
+  </div>
+
+  <script src="/js/bg.js"></script>
+
+</body>
+</html>

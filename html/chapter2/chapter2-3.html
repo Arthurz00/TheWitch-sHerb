@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Witch's Herb</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            background-color: #273336;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="rectangle-cut" style="z-index: 1;"></div>
+        <div class="centercenter" style="z-index: 2;">
+            <img src="/img/Cutting/เขียง.png" width="50%">
+        </div>
+
+        <div class="centercenter" style="z-index: 3; margin-top: -1%;" id="imageDisplay">
+            <img id="displayedImage" src="/img/Cutting/wormwood.png" width="60%" alt="Initial Image">
+        </div>
+
+        <div class="center-knife" style="z-index: 4;">
+            <img src="/img/Cutting/มีด.png" width="35%" class="bouncing-knife"> 
+        </div>
+    </div>
+
+    <div class="hero-text1-1">
+        <h3 style="font-weight: 400" class="centerpg_bt"> กดเพื่อสับสมุนไพรให้ละเอียด</h3>
+    </div>
+
+    <div>
+        <button id="nextButton" class="circle center-bottom-element" onclick="handleButtonClick()"></button>
+    </div>
+
+
+<!-- 
+    <a href="/html/chapter2/chapter2-2.html">
+        <button class="changing-element btnft bottom-button" style="z-index: 2;">กดหน้าจอเพื่อไปต่อ</button>
+    </a> -->
+
+    <script src="/js/click.js"></script>
+</body>
+
+</html>
