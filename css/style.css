@@ -946,18 +946,15 @@ body{
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
+  animation: moveLeftRight 3s alternate linear infinite; /* Apply the animation */
 }
 
 @keyframes moveLeftRight {
   0% {
-      left: 1; /* Start position: left edge of the container */
-  }
-  50% {
-      left: 30%/* Middle position: right edge of the container minus element width */
+      left: 30%; /* Start position: left edge of the container */
   }
   100% {
-      left: 1 ; /* End position: back to the left edge of the container */
+      left: 70% ; /* End position: back to the left edge of the container */
   }
 }
 
