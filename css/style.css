@@ -1133,15 +1133,15 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  /* range 44.6% - 46.4% */
-  animation: moveLeftRight 5s alternate linear infinite; 
-  /* Apply the animation */
-
+  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
 }
 
 @keyframes moveLeftRight {
   0% {
-      left: 28.5%; /* Start position: left edge of the container */
+      left: 1; /* Start position: left edge of the container */
+  }
+  50% {
+      left: 30%/* Middle position: right edge of the container minus element width */
   }
   100% {
       left: 70% ; /* End position: back to the left edge of the container */
