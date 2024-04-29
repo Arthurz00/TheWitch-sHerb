@@ -1150,7 +1150,7 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
+  animation: moveLeftRight 3s alternate linear infinite; /* Apply the animation */
 }
 
 @keyframes moveLeftRight {
