@@ -186,6 +186,7 @@ body{
     overflow: hidden;
     max-width: 1920px;
     max-height: 1080px;
+    color: #FFFFEA;
 }
 
 .bg {
@@ -255,6 +256,139 @@ body{
             80% { transform: rotate(1deg); }
             90% { transform: rotate(0deg); }
             100% { transform: rotate(1deg); }
+}
+
+.handGS {
+  position: relative;
+  animation: moveArm 4s ease-in-out infinite alternate;
+  transform-origin: bottom ;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(300deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.headGS {
+  position: relative;
+  animation: moveArm 4s ease-in-out infinite alternate;
+  transform-origin: bottom ;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(200deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.armL {
+  position: relative;
+  animation: moveArm 8s ease-in-out infinite alternate;
+  transform-origin: left;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(0.5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.moveArmL {
+  position: relative;
+  animation: moveArm 8s ease-in-out infinite alternate;
+  transform-origin: bottom right ;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(12deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+
+}
+.moveHeadL {
+  position: relative;
+  animation: moveArm 8s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(4deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+
+}
+.moveHeadR {
+  position: relative;
+  animation: moveArm 6s ease-in-out infinite alternate;
+  transform-origin: bottom right;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(3deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.moveArmR {
+  position: relative;
+  animation: moveArm 8s ease-out infinite alternate;
+  transform-origin: bottom;
+}
+
+/* Keyframes for the arm movement */
+@keyframes moveArm {
+  0% {
+      transform: rotate(3deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(3deg);
+  }
 }
 
 .moveR {
@@ -345,7 +479,7 @@ body{
 }
 
 .moveHead {
-  animation: shake 11s;
+  animation: shake 7s;
   animation-iteration-count: infinite;
 }
 
@@ -400,7 +534,7 @@ body{
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #FFFFEA;
 }
 
 .center{
@@ -424,7 +558,7 @@ body{
     position: relative;
     border: none; /* Remove border */
     background-color: transparent; /* Transparent background */
-    color: white; /* Inherit text color */
+    color: #F5F5F5; /* Inherit text color */
     
 }
 .btnft :hover {
@@ -628,6 +762,10 @@ body{
   animation: opacityAnimation 3s ease-in-out forwards; /* Apply the opacity animation */
 }
 
+.opacity2 {
+  animation: opacityAnimation 1s ease-in-out forwards; /* Apply the opacity animation */
+}
+
 @keyframes opacityAnimation {
   0% {
       opacity: 0; /* Start opacity: 0% */
@@ -735,41 +873,85 @@ body{
   z-index: 3;
 }
 
-.rectangle-honey-L {
-  position: absolute;
-  top: 45%; /* Center vertically */
-  left: 30%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+/* .rectangle-honey-L {
+  top: 75%; 
+  left: 30%; 
+  transform: translate(-50%, -50%); 
   height: 600px;
   width: 500px;
   border-radius: 35px;
   background-color: #9dc2c2;
   z-index: 1;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out; /* Define the transition */
-    }
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+} */
 
-.rectangle-honey-L:hover {
-        transform: scale(1.1); /* Scale the box on hover */
-        background-color: white; /* Change background color on hover */
-        cursor: pointer; /* Change cursor to indicate interactivity */
+.rectangle-honey-L {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 35px;
+  background-color: #9dc2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  margin-left: 60%;
+  margin-top: 37%;
 }
 
 .rectangle-honey-L:hover {
-  background-color: #ffffff; /* Change background color on hover */
-  transform: scale(1.1); /* Scale up the element by 10% on hover */
+  transform: scale(0.9);
 }
 
-.rectangle-honey-R {
+.content img {
+position: relative;
+z-index: 5;
+transition: transform 0.8s ease; /* Apply transition effect to transform property */
+}
+
+/* .rectangle-honey-R {
   position: absolute;
-  top: 45%; /* Center vertically */
-  right: 4%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+  top: 45%; 
+  right: 4%; 
+  transform: translate(-50%, -50%); 
   height: 600px;
   width: 500px;
   border-radius: 35px;
   background-color: #9dc2c2;
   z-index: 3;
+} */
+
+.rectangle-honey-R {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  border-radius: 35px;
+  background-color: #9dc2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  margin-left: 30%;
+  margin-top: -16%;
+  z-index: 3;
+}
+
+.rectangle-honey-R:hover {
+  transform: scale(0.9);
+}
+
+.content img {
+position: relative;
+z-index: 5;
+transition: transform 0.8s ease; /* Apply transition effect to transform property */
 }
 
 .circle {
@@ -778,7 +960,7 @@ body{
   background-color: #305658;
   border-radius: 50%;
   border: none;
-  overflow: hidden; /* Use 'hidden' instead of 'scroll' for circular shape */
+  overflow: hidden; /* Hide overflow to maintain circular shape */
 
   /* Transition effect for opacity change */
   transition: opacity 0.3s ease;
@@ -789,13 +971,18 @@ body{
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-
-.center-bottom-element {
-  position: absolute; /* Position the element absolutely */
-  bottom: 4%; /* Align the element to the bottom */
-  left: 50%; /* Center the element horizontally */
+.click-circle {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+  position: fixed;
+  bottom: 4%; /* Align the button to the bottom */
+  left: 50%; /* Center the button horizontally */
   transform: translateX(-50%); /* Adjust for center alignment */
-  padding: 10px;
+}
+
+.click-circle:active {
+  transform: scale(1.5); /* Apply scale transformation when button is clicked */
 }
 
 .centercenter {
@@ -885,7 +1072,7 @@ body{
   width: 70px;
   height: 50px;
   background-color: #7ab6b7;
-  position: fixed;
+  position: absolute;
   bottom: 120px; /* Adjust this value to control the distance from the bottom */
   left: 44%;
   transform: translateX(-50%);
@@ -946,18 +1133,18 @@ body{
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
+  /* range 44.6% - 46.4% */
+  animation: moveLeftRight 5s alternate linear infinite; 
+  /* Apply the animation */
+
 }
 
 @keyframes moveLeftRight {
   0% {
-      left: 1; /* Start position: left edge of the container */
-  }
-  50% {
-      left: 30%/* Middle position: right edge of the container minus element width */
+      left: 28.5%; /* Start position: left edge of the container */
   }
   100% {
-      left: 1 ; /* End position: back to the left edge of the container */
+      left: 70% ; /* End position: back to the left edge of the container */
   }
 }
 
@@ -990,19 +1177,121 @@ body{
   touch-action: manipulation;
 }
 
-.button-73:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
-  transform: scale(1.125);
+.nodec {
+  /* Reset default button styles */
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none; /* Remove default focus outline */
 }
 
-.button-73:active {
-  transform: scale(1.025);
+.hover-div {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #9dc2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  margin-left: 12%;
+  margin-top: 11%;
 }
 
-@media (min-width: 768px) {
-  .button-73 {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
+.hover-div:hover {
+  transform: scale(0.9);
+}
+
+.content img {
+position: relative;
+z-index: 2;
+transition: transform 0.8s ease; /* Apply transition effect to transform property */
+}
+
+.hover-div:hover .content img {
+transform: scale(4); /* Prevent images from scaling on hover */
+padding-left: 3.5%;
+}
+
+.timer {
+  clip: rect(0px, 100px, 100px, 50px); /* Initial clip (left half of the circle) */
+  transform: rotate(0deg);
+  background-color: #ff6347; /* Red color for timer */
+  animation: timerAnimation 5s linear forwards;
+}
+
+@keyframes timerAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
+
+.shake {
+  animation: shake 0.5s infinite; /* Apply the 'shake' animation on hover with infinite iterations */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake2 {
+  animation: shake2 0.5s infinite; /* Apply the 'shake' animation on hover with infinite iterations */
+}
+@keyframes shake2 {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(1px) }
+  50% { transform: translateX(-1px) }
+  75% { transform: translateX(1px) }
+  100% { transform: translateX(0) }
+ }
+
+ .shake3 {
+  animation: shake2 0.5s infinite; /* Apply the 'shake' animation on hover with infinite iterations */
+  position: fixed;
+}
+@keyframes shake2 {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(2px) }
+  50% { transform: translateX(-2px) }
+  75% { transform: translateX(2px) }
+  100% { transform: translateX(0) }
+ }

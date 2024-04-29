@@ -1,11 +1,4 @@
-function changeImage() {
-    var image = document.getElementById('imageDisplay');
-    // Change the image source
-    image.src = 'img/Cutting/wormwood.png'; 
-    image.alt = 'img/Cutting/part1.png'; 
-}
-
- // Automatically trigger the animation when the page loads
+// Automatically trigger the animation when the page loads
  window.onload = function() {
     var element = document.getElementById('animatedElement');
     element.classList.add('fade-in-out');

@@ -24,12 +24,24 @@
         </div>
 
         <div class="centercenter" style="z-index: 3; margin-top: -1%;" id="imageDisplay">
-            <img src="/img/Cutting/all.png" width="60%" alt="Initial Image">
+            <img src="/img/Cutting/all.png" width="60%" alt="Initial Image" class="opacity2">
         </div>
 
     </div>
 
-    <script src="/js/click.js"></script>
+    <script>
+         function redirectToNextPage() {
+            setTimeout(() => {
+                window.location.href = 'chapter2-4.html'; // Redirect to the next page
+            }, 2500); // Delay in milliseconds (3 seconds)
+        }
+
+        // Call the function to start the redirection process
+        redirectToNextPage();
+    </script>
+
+
+ <script src="/js/bg.js"></script>
 </body>
 
 </html>

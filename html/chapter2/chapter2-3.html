@@ -24,27 +24,23 @@
         </div>
 
         <div class="centercenter" style="z-index: 3; margin-top: -1%;" id="imageDisplay">
-            <img id="displayedImage" src="/img/Cutting/wormwood.png" width="60%" alt="Initial Image">
+            <img src="/img/Cutting/wormwood.png" width="60%" alt="Initial Image">
         </div>
 
-        <div class="center-knife" style="z-index: 4;">
-            <img src="/img/Cutting/มีด.png" width="35%" class="bouncing-knife"> 
+        <div class="center-knife" style="z-index: 4; margin-top: 3%;" id="imageContainer">
+            <img src="/img/Cutting/มีด.png" width="35%"> 
         </div>
     </div>
 
     <div class="hero-text1-1">
-        <h3 style="font-weight: 400" class="centerpg_bt"> กดเพื่อสับสมุนไพรให้ละเอียด</h3>
+        <h3 style="font-weight: 400" class="centerpg_bt"> กดปุ่มย้ำๆเพื่อสับสมุนไพรให้ละเอียด</h3>
     </div>
 
     <div>
-        <button id="nextButton" class="circle center-bottom-element" onclick="handleButtonClick()"></button>
+        <button id="clickButton" class="circle center-bottom-element click-circle" onclick="handleButtonClick()"></button>
     </div>
 
-
-<!-- 
-    <a href="/html/chapter2/chapter2-2.html">
-        <button class="changing-element btnft bottom-button" style="z-index: 2;">กดหน้าจอเพื่อไปต่อ</button>
-    </a> -->
+     <script src="/js/bg.js"></script>
 
     <script src="/js/click.js"></script>
 </body>
