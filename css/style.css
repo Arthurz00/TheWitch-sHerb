@@ -1056,16 +1056,13 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 }
 
 .game-bar {
-  /* width: 800px;
-  height: 50px; */
-  width: 40%;
-  height: 5%;
+  width: 800px;
+  height: 50px;
   background-color: #2d5c64;
   border-radius: 30px;
   position: fixed;
   bottom: 120px; /* Adjust this value to control the distance from the bottom */
   left: 50%;
-  left: 52%;
   transform: translateX(-50%);
   text-align: center;
   line-height: 50px;
@@ -1073,15 +1070,12 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 }
 
 .game-bar-middle {
-  /* width: 70px;
-  height: 50px; */
-  width: 5%;
-  height: 5%;
+  width: 70px;
+  height: 50px;
   background-color: #7ab6b7;
   position: absolute;
   bottom: 120px; /* Adjust this value to control the distance from the bottom */
   left: 44%;
-  left: 41%;
   transform: translateX(-50%);
   text-align: center;
   line-height: 50px;
@@ -1089,16 +1083,13 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 }
 
 .game-bar-low {
-  /* width: 280px;
-  height: 50px; */
-  width: 15%;
-  height: 5%;
+  width: 280px;
+  height: 50px;
   background-color: #95d7d8;
   border-radius: 30px 0px 0px 30px;
   position: fixed;
   bottom: 120px; /* Adjust this value to control the distance from the bottom */
   left: 35%;
-  left: 33%;
   transform: translateX(-50%);
   text-align: center;
   line-height: 50px;
@@ -1159,9 +1150,7 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s alternate linear infinite;
-  /* range 44.6% - 46.4% */
-
+  animation: moveLeftRight 3s linear infinite; /* Apply the animation */
 }
 
 @keyframes moveLeftRight {
