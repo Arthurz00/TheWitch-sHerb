@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     bgSound.muted = true;
     toggleMuteButton(true); // Update mute button appearance
   }
+
+  // Save audio playback state to sessionStorage when the page is unloaded
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('bgSoundTime', bgSound.currentTime);
+  });
 });
 
 const muteButton = document.getElementById('muteButton');
@@ -28,6 +33,7 @@ const muteImage = document.getElementById('muteImage');
 
 // Function to toggle mute state and update button image
 const toggleMute = () => {
+  const bgSound = document.getElementById('bgSound'); // Retrieve the audio element
   if (bgSound) {
     bgSound.muted = !bgSound.muted; // Toggle audio mute state
     toggleMuteButton(bgSound.muted); // Update mute button appearance
