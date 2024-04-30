@@ -498,11 +498,12 @@ body{
 
 
 .thewitch{
-    font-size: 78px;
+    font-size: 80pt;
     text-shadow: 1px 2.5px #00000081;
     font-family: Almendra SC;
     letter-spacing: 4px;
     font-weight: 400;
+    color: #FFFFEA;
     
 }
 
@@ -808,7 +809,7 @@ body{
 .rectangle-L {
   position: fixed;
   top: 25%;
-  left: 23%;
+  left: 18%;
   height: 550px;
   width: 420px;
   border-radius: 35px;
@@ -819,7 +820,7 @@ body{
 .rectangle-Lin {
   position: fixed;
   top: 48%;
-  left: 25%;
+  left: 20%;
   height: 270px;
   width: 340px;
   border-radius: 35px;
@@ -831,7 +832,7 @@ body{
 .rectangle-Lin-x {
   position: fixed;
   top: 44%;
-  left: 25.2%;
+  left: 20.2%;
   height: 320px;
   width: 335px;
   border-radius: 35px;
@@ -843,7 +844,7 @@ body{
 .rectangle-R {
   position: fixed;
   top: 25%;
-  right: 16%;
+  right: 19%;
   height: 550px;
   width: 720px;
   border-radius: 35px;
@@ -853,10 +854,10 @@ body{
 
 .rectangle-Rin {
   position: fixed;
-  top: 27%;
-  right: 17.75%;
-  height: 500px;
-  width: 650px;
+  top: 26.7%;
+  right: 20.7%;
+  height: 510px;
+  width: 660px;
   border-radius: 35px;
   background-color: #7ab6b7;
   z-index: 3;
@@ -1100,7 +1101,7 @@ transition: transform 0.8s ease; /* Apply transition effect to transform propert
 .moving-fireboil {
   text-align: center;
   transform: translate(-50%, -50%);
-  animation: moveLeftRight 3s alternate linear infinite; 
+  animation: moveLeftRight 3.5s alternate linear infinite; 
 }
 
 @keyframes moveLeftRight {
@@ -1309,3 +1310,12 @@ padding-left: 3.5%;
   75% { transform: translateX(2px) }
   100% { transform: translateX(0) }
  }
+
+ .top-right {
+  position: absolute;
+  top: 5%; /* Adjust top distance from the top edge of the container */
+  left: 90%; /* Adjust right distance from the right edge of the container */
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}

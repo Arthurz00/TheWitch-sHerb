@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Click Redirection</title>
+    <style>
+        #clickableImage {
+            width: 100%; /* Adjust width as needed */
+            max-width: 500px; /* Set a max-width to control the image size */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div style="width: 100%;">
+    <img id="clickableImage" src="/img/Boiling/fire.png" alt="Clickable Image" class="fireboil moving-fireboil">
+</div>
+    <p id="screen-log"></p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableImage = document.getElementById('clickableImage');
+
+            clickableImage.addEventListener('click', function(event) {
+                const clientX = event.clientX;
+
+                // Check if the click position is within the specified range
+                if (clientX >= 814 && clientX <= 879) {
+                    // Redirect to the next page (replace 'next-page.html' with your desired URL)
+                    window.location.href = 'next-page.html';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
