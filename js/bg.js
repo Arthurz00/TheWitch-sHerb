@@ -50,3 +50,4 @@ const toggleMuteButton = (isMuted) => {
 
 // Event listener for mute button click
 muteButton.addEventListener('click', toggleMute);
+
